@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 
 function Todo({title,description}) {
   return (
@@ -8,4 +10,8 @@ function Todo({title,description}) {
   )
 }
 
-export default Todo
+export default Todo;
+Todo.propTypes = {
+  title: PropTypes.string.isRequired,
+  description : PropTypes.string.isRequired
+};
